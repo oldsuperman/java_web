@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!--
+		表单点击提交，地址后面出现 ？参数列表
+		参数列表格式：
+		参数1=参数值1&参数值2=参数值2&参数值3=参数值3
+		on表示选中，不管男女都显示on
+		？sex=on
+		单选块只能选择不能输入。指定value属性
+		-->
+		<form>
+			用户名：<input type="text" name="username"/><br/>
+			密码：<input type="password" name="password"/><br/>
+			性别：<br/>
+			<!--name实现分组单选效果,cheecked默认选中-->
+				男：<input type="radio" name="sex" value="man" checked="checked"><br/>
+				女：<input type="radio" name="sex" value="woman"><br/>
+				公：<input type="radio" name="sex1"><br/>
+				母：<input type="radio" name="sex1"><br/>
+			<input type="submit" />
+		</form>
+	</body>
+</html>
